@@ -384,6 +384,8 @@
     "sw_tune_zerolatency": "Zerolatency -- gut für schnelle Kodierung und Low-Latency Streaming (Standard)",
     "system_tray": "Systemabschnitt aktivieren",
     "system_tray_desc": "Symbol in der Systemleiste anzeigen und Desktop-Benachrichtigungen anzeigen",
+    "launch_browser_on_startup": "Open Web UI on Startup",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
     "touchpad_as_ds4": "Ein DS4 Gamepad emulieren, wenn der Client Gamepad meldet, dass ein Touchpad vorhanden ist",
     "touchpad_as_ds4_desc": "Wenn deaktiviert, wird das Touchpad-Vorhandensein bei der Auswahl des Gamepad-Typs nicht berücksichtigt.",
     "upnp": "UPnP",

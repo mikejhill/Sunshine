@@ -384,6 +384,8 @@
     "sw_tune_zerolatency": "zerolatency -- gyors kódoláshoz és alacsony késleltetésű streaminghez jó (alapértelmezett)",
     "system_tray": "Rendszertálca engedélyezése",
     "system_tray_desc": "Ikon megjelenítése a rendszertálcán és asztali értesítések megjelenítése",
+    "launch_browser_on_startup": "Open Web UI on Startup",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
     "touchpad_as_ds4": "DS4 gamepad emulálása, ha a kliensgép gamepad érintőtábla jelenlétét jelzi",
     "touchpad_as_ds4_desc": "Ha ki van kapcsolva, az érintőpad jelenléte nem kerül figyelembevéve a gamepad-típus választásakor.",
     "upnp": "UPnP",

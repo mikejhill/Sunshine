@@ -384,6 +384,8 @@
     "sw_tune_zerolatency": "zerolatency -- bon pour un encodage rapide et un streaming à faible latence (par défaut)",
     "system_tray": "Activer la barre d'état système",
     "system_tray_desc": "Afficher l'icône dans la barre d'état système et afficher les notifications du bureau",
+    "launch_browser_on_startup": "Open Web UI on Startup",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
     "touchpad_as_ds4": "Émuler une manette DS4 si la manette client signale qu'elle dispose d'un pavé tactile",
     "touchpad_as_ds4_desc": "Si désactivé, la présence du pavé tactile ne sera pas prise en compte lors de la sélection du type du pavé tactile.",
     "upnp": "UPnP",

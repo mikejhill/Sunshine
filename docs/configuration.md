@@ -285,6 +285,29 @@ editing the `conf` file in a text editor. Use the examples as reference.
     </tr>
 </table>
 
+### launch_browser_on_startup
+
+<table>
+    <tr>
+        <td>Description</td>
+        <td colspan="2">
+            Automatically open the Web UI in the default browser when Sunshine starts.
+        </td>
+    </tr>
+    <tr>
+        <td>Default</td>
+        <td colspan="2">@code{}
+            enabled
+            @endcode</td>
+    </tr>
+    <tr>
+        <td>Example</td>
+        <td colspan="2">@code{}
+            launch_browser_on_startup = enabled
+            @endcode</td>
+    </tr>
+</table>
+
 ## Input
 
 ### controller
