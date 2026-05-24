@@ -279,6 +279,7 @@ namespace config {
     std::string log_file;
     bool notify_pre_releases;
     bool system_tray;
+    bool launch_browser_on_startup;
     std::vector<prep_cmd_t> prep_cmds;
 
     // List of allowed origins for CSRF protection (e.g., "https://example.com,https://app.example.com")

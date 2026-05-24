@@ -601,6 +601,7 @@ namespace config {
     platf::appdata().string() + "/sunshine.log",  // log file
     false,  // notify_pre_releases
     true,  // system_tray
+    true,  // launch_browser_on_startup
     {},  // prep commands
   };
 
@@ -1318,6 +1319,7 @@ namespace config {
 
     bool_f(vars, "notify_pre_releases", sunshine.notify_pre_releases);
     bool_f(vars, "system_tray", sunshine.system_tray);
+    bool_f(vars, "launch_browser_on_startup", sunshine.launch_browser_on_startup);
 
     int port = sunshine.port;
     int_between_f(vars, "port"s, port, {1024 + nvhttp::PORT_HTTPS, 65535 - rtsp_stream::RTSP_SETUP_PORT});
@@ -1546,7 +1548,9 @@ namespace config {
       }
 
       // Launch the web UI
-      launch_ui();
+      if (config::sunshine.launch_browser_on_startup) {
+        launch_ui();
+      }
 
       // Always return 1 to ensure Sunshine doesn't start normally
       return 1;

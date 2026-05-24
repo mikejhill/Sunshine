@@ -384,6 +384,8 @@
     "sw_tune_zerolatency": "latencia cero -- bueno para codificación rápida y transmisión de baja latencia (por defecto)",
     "system_tray": "Habilitar bandeja del sistema",
     "system_tray_desc": "Mostrar icono en la bandeja del sistema y mostrar notificaciones de escritorio",
+    "launch_browser_on_startup": "Open Web UI on Startup",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Emular un gamepad DS4 si el gamepad del cliente reporta que un touchpad está presente",
     "touchpad_as_ds4_desc": "Si está desactivado, la presencia del touchpad no se tendrá en cuenta durante la selección del tipo gamepad.",
     "upnp": "UPnP",

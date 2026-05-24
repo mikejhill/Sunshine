@@ -148,6 +148,13 @@ function removeCmd(index) {
               v-model="config.system_tray"
               default="true"
     ></Checkbox>
+
+    <Checkbox class="mb-3"
+              id="launch_browser_on_startup"
+              locale-prefix="config"
+              v-model="config.launch_browser_on_startup"
+              default="true"
+    ></Checkbox>
   </div>
 </template>
 

@@ -384,6 +384,8 @@
     "sw_tune_zerolatency": "zerolatency -- vhodné pro rychlé kódování a streamování s nízkou latencí (výchozí)",
     "system_tray": "Povolit systémovou lištu",
     "system_tray_desc": "Zobrazit ikonu v systémové liště a zobrazit oznámení na ploše",
+    "launch_browser_on_startup": "Open Web UI on Startup",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Emulovat gamepad DS4, pokud klientský gamepad hlásí přítomnost touchpadu",
     "touchpad_as_ds4_desc": "Pokud je vypnuto, nebude při výběru typu gamepadu zohledněna přítomnost touchpadu.",
     "upnp": "UPnP",
