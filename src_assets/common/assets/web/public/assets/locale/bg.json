@@ -385,7 +385,7 @@
     "system_tray": "Използване на системната област",
     "system_tray_desc": "Показване на иконка в системната област в лентата за задачи, както и показване на известия на работния плот",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Симулиране на контролер DS4, ако контролерът на клиента разполага със сензорен панел",
     "touchpad_as_ds4_desc": "Ако е изключено, сензорният панел няма да се взема предвид при избора на вида контролер.",
     "upnp": "UPnP",

@@ -385,7 +385,7 @@
     "system_tray": "Включить системный трей",
     "system_tray_desc": "Показывать значок в панели уведомлений и отображать уведомления рабочего стола",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Эмулировать контроллер DS4 если контроллер клиента сообщает о наличии сенсорной панели",
     "touchpad_as_ds4_desc": "Если отключено, присутствие сенсорной панели не будет учитываться при выборе типа геймпада.",
     "upnp": "UPnP",

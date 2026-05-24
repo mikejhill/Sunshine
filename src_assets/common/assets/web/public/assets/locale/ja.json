@@ -385,7 +385,7 @@
     "system_tray": "システムトレイを有効にする",
     "system_tray_desc": "システムトレイにアイコンを表示し、デスクトップ通知を表示する",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "クライアントゲームパッドがタッチパッドが存在することを報告する場合、DS4ゲームパッドをエミュレートします",
     "touchpad_as_ds4_desc": "無効にすると、ゲームパッドの種類選択中にタッチパッドの存在が考慮されません。",
     "upnp": "UPnP",

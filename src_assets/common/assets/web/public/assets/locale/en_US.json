@@ -385,7 +385,7 @@
     "system_tray": "Enable system tray",
     "system_tray_desc": "Show icon in system tray and display desktop notifications",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Emulate a DS4 gamepad if the client gamepad reports a touchpad is present",
     "touchpad_as_ds4_desc": "If disabled, touchpad presence will not be taken into account during gamepad type selection.",
     "upnp": "UPnP",

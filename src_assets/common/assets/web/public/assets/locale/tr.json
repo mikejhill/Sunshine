@@ -385,7 +385,7 @@
     "system_tray": "Sistem tepsisini etkinleştir",
     "system_tray_desc": "Sistem tepsisinde simge gösterme ve masaüstü bildirimlerini görüntüleme",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "İstemci oyun kumandası bir dokunmatik yüzey olduğunu bildirirse bir DS4 oyun kumandasını taklit edin",
     "touchpad_as_ds4_desc": "Devre dışı bırakılırsa, oyun kumandası türü seçimi sırasında dokunmatik yüzey varlığı dikkate alınmaz.",
     "upnp": "UPnP",

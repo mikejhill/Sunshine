@@ -291,7 +291,7 @@ editing the `conf` file in a text editor. Use the examples as reference.
     <tr>
         <td>Description</td>
         <td colspan="2">
-            Automatically open the Web UI in the default browser when Sunshine starts.
+            Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.
         </td>
     </tr>
     <tr>

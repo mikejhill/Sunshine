@@ -666,3 +666,48 @@ TEST_F(ConfigConsistencyTest, TestFrameworkDetectsMissingOptions) {
   // Verify we have at least 3 missing entries (one for each file type)
   EXPECT_GE(missingFromFiles.size(), 3) << "Test framework should detect missing dummy option in all three file types";
 }
+
+TEST_F(ConfigConsistencyTest, LaunchBrowserOnStartupDescriptionClarifiesApplicationStart) {
+  const std::string docsContent = file_handler::read_file("docs/configuration.md");
+  const std::string enLocaleContent = file_handler::read_file("src_assets/common/assets/web/public/assets/locale/en.json");
+
+  const std::string expectedDescription =
+    "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.";
+
+  EXPECT_TRUE(docsContent.contains(expectedDescription))
+    << "configuration.md should clarify that this setting applies to Sunshine application startup, not service-only startup";
+  EXPECT_TRUE(enLocaleContent.contains(expectedDescription))
+    << "en.json should clarify that this setting applies to Sunshine application startup, not service-only startup";
+}
+
+TEST_F(ConfigConsistencyTest, FlatpakStartupScriptGatesBothBrowserLaunchPaths) {
+  const std::string scriptContent = file_handler::read_file("packaging/linux/flatpak/scripts/sunshine.sh");
+
+  EXPECT_TRUE(scriptContent.contains("CONFIG_FILE=\"${XDG_CONFIG_HOME:-$HOME/.config}/sunshine/sunshine.conf\""))
+    << "Flatpak startup script should resolve Sunshine config path using XDG_CONFIG_HOME fallback";
+
+  EXPECT_TRUE(scriptContent.contains("launch_browser_on_startup[[:space:]]*=[[:space:]]*false"))
+    << "Flatpak startup script should detect launch_browser_on_startup = false in sunshine.conf";
+
+  const std::string guardToken = "if should_launch_browser; then";
+  size_t guardCount = 0;
+  size_t pos = 0;
+  while ((pos = scriptContent.find(guardToken, pos)) != std::string::npos) {
+    ++guardCount;
+    pos += guardToken.length();
+  }
+  EXPECT_EQ(guardCount, 2)
+    << "Flatpak startup script should gate both browser-launch paths with should_launch_browser";
+
+  const std::regex delayedLaunchGuardPattern(
+    R"(if should_launch_browser; then\s*\n\s*\(sleep 3 && xdg-open https://localhost:\$PORT\) &\s*\n\s*fi)"
+  );
+  const std::regex alreadyRunningGuardPattern(
+    R"(if should_launch_browser; then\s*\n\s*echo \"Sunshine is already running, opening the web interface\.\.\.\"\s*\n\s*xdg-open https://localhost:\$PORT\s*\n\s*fi)"
+  );
+
+  EXPECT_TRUE(std::regex_search(scriptContent, delayedLaunchGuardPattern))
+    << "Cold-start Flatpak browser launch path should be gated by should_launch_browser";
+  EXPECT_TRUE(std::regex_search(scriptContent, alreadyRunningGuardPattern))
+    << "Already-running Flatpak browser launch path should be gated by should_launch_browser";
+}

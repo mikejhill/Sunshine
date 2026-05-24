@@ -385,7 +385,7 @@
     "system_tray": "Abilita vassoio di sistema",
     "system_tray_desc": "Mostra icona nel vassoio di sistema e visualizza le notifiche desktop",
     "launch_browser_on_startup": "Open Web UI on Startup",
-    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when Sunshine starts.",
+    "launch_browser_on_startup_desc": "Automatically open the Web UI in the default browser when the Sunshine application starts. Starting only the Sunshine service does not open the Web UI.",
     "touchpad_as_ds4": "Emula un gamepad DS4 se il gamepad client segnala che un touchpad è presente",
     "touchpad_as_ds4_desc": "Se disabilitata, la presenza del touchpad non sarà presa in considerazione durante la selezione del tipo del gamepad.",
     "upnp": "UPnP",
